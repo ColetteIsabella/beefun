@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  width: 100%;
+
+}
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+header {
+  height: 20rem;
+  width: 100%;
+  background-color: #9999FF;
+}
+.icon {
+  height: 18rem;
+  text-align: center;
+  margin: .5% 5% 0 5%;
+}
+.beeleft {
+  float: left;
+  margin: 0 5% 0 5%;
+}
+.beeright {
+  float: right;
+  margin: 3rem 5% 0 1%;
+}
+#home, #beeHome {
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  margin: 1rem;
+}
+#beeHome {
+  display: none;
+}
+.stage{
+  height: 40rem;
+  width: 100%;
+  border: .1rem solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+#flying {
+  position: absolute;
+  background: url(images/bee.png);
+  height: 5rem;
+  width: auto;
+}
+
