@@ -17,7 +17,7 @@ $(document).mousemove(function(e){
   centerX = (offset.left) + (image.width()/2);
   centerY = (offset.top) + (image.height()/2);
   radians = Math.atan2(mouseX - centerX, mouseY - centerY);
-  degree = (radians *(180/Math.PI)* -1) +90;
+  degree = (radians *(180/Math.PI)* -1);
 
   image.css('-moz-transform', 'rotate('+degree+'deg)');
   image.css('-webkit-transform', 'rotate('+degree+'deg)');
@@ -40,5 +40,17 @@ $("#send").click(function(){
       {duration: "slow"});
     }
   })
+
 });
+$("#send").hover(function(){
+    $("#byebee").toggle();
+});
+
+var stickyElements = $(".sticky");
+for (var i = stickyElements.length - 1; i>= 0; i--) {
+  Stickyfill.add(stickyElements[i]);
+}
+
+
+
 
