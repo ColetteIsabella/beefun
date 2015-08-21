@@ -5,7 +5,7 @@ relMouseY = 0;
 var image = $("#flying");
 
 $(document).ready(function(){
-  offset = $(".stage").offset();
+  offset = $("#stage").offset();
   atimer = setInterval("animateFollower()", timeInterval );
 });
 

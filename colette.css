@@ -48,6 +48,7 @@ em {
 header {
   height: 20rem;
   background: url(images/backgroundCombcut.png);
+  width: 100%;
 }
 .icon {
   height: 18rem;
@@ -80,10 +81,11 @@ header {
 #beeHome {
   display: none;
 }
-.stage{
+#stage{
   height: 800rem;
   border: .1rem solid #1F0033;
   background-color: #EBCCFF;
+  overflow: hidden;
 }
 #flying {
   position: absolute;
